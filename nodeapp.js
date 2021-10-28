@@ -11,7 +11,8 @@ app.use(cors());
 
 
 app.post('/', (req, res) => {
-	console.log(req.body)
+  result=req.body;
+  res.send(result)
 })
 
 app.get('/', (req, res) => {
